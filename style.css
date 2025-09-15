@@ -342,7 +342,7 @@
     box-sizing: border-box;
     padding: 0 1.5rem;
     color: #fff;
-    background-color: var(--primary);
+    background-color: #FF0000;
     border-radius: 0.25rem;
     display: inline-block;
     position: relative;
@@ -876,8 +876,7 @@
         display: block;
     }
     #cs-footer-274 .cs-logo-img {
-        width: 100%;
-        height: auto;
+        height: 150%;
     }
     #cs-footer-274 .cs-social {
         display: inline-flex;
@@ -992,4 +991,86 @@
     #cs-footer-274 .cs-nav {
         margin-top: 0.75rem;
     }
+}
+
+/*emergency button*/
+body.modal-open { overflow: hidden; }
+
+#emergencyModal {
+  position: fixed;
+  inset: 0;
+  z-index: 20000;            
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease;
+}
+
+#emergencyModal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#emergencyModal .em-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+#emergencyModal .em-dialog {
+  width: min(90vw, 28rem);
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,.25);
+  position: relative;
+  text-align: center;
+}
+
+#emergencyModal .em-close {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  background: transparent;
+  border: 0;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#emergencyModal .em-actions {
+  display: flex;
+  gap: .75rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#emergencyModal .em-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10rem;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#emergencyModal .em-call {
+  background: #ff0000;
+  color: #fff;
+}
+#emergencyModal .em-call:hover { filter: brightness(.80); }
+
+#emergencyModal .em-sms {
+  background: #ff0000;
+  color: #fff;
+}
+#emergencyModal .em-sms:hover { filter: brightness(.80); }
+
+@media (max-width: 480px) {
+  #emergencyModal .em-dialog { width: 92vw; padding: 1.25rem; }
 }
