@@ -4,9 +4,10 @@
 		<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
-    <link href="style.css" rel="stylesheet">
     <link href="core.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 	</head>
+    <body>
 <!-- ============================================ -->
 <!--                 Navigation                   -->
 <!-- ============================================ -->
@@ -48,7 +49,8 @@
                 </ul>
             </div>
         </nav>
-        <a href="#cta-51" class="cs-button-solid cs-nav-button" id="emergencyBtn">EMERGENCY</a>
+        <a href="#" id="emergencyBtn" class="cs-button-solid cs-nav-button" role="button" aria-haspopup="dialog" aria-controls="emergencyModal">EMERGENCY</a>
+
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
         <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
             <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
@@ -99,7 +101,7 @@
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
-                <img class="cs-icon" aria-hidden="true" src="image/performance.png" decoding="async" alt="cube icon" width="60" height="60">
+                <img class="cs-icon" aria-hidden="true" src="image/performance.png" decoding="async" alt="perfromance" width="60" height="60">
                 <div class="cs-flex-group">
                     <h3 class="cs-h3">Great performance High-class service</h3>
                     <p class="cs-item-text">
@@ -108,7 +110,7 @@
                 </div>
             </li>
             <li class="cs-item">
-                <img class="cs-icon" aria-hidden="true" src="image/assistance.png" decoding="async" alt="cube icon" width="60" height="60">
+                <img class="cs-icon" aria-hidden="true" src="image/assistance.png" decoding="async" alt="assistance" width="60" height="60">
                 <div class="cs-flex-group">
                     <h3 class="cs-h3">Roadside Assistance</h3>
                     <p class="cs-item-text">
@@ -117,7 +119,7 @@
                 </div>
             </li>
             <li class="cs-item">
-                <img class="cs-icon" aria-hidden="true" src="image/services.png" decoding="async" alt="cube icon" width="60" height="60">
+                <img class="cs-icon" aria-hidden="true" src="image/services.png" decoding="async" alt="services" width="60" height="60">
                 <div class="cs-flex-group">
                     <h3 class="cs-h3">Breakdown Services</h3>
                     <p class="cs-item-text">
@@ -133,7 +135,7 @@
     <picture class="cs-background">
         <source media="(max-width: 767px)" srcset="image/Truck2.png">
         <source media="(min-width: 768px)" srcset="image/Truck2.png">
-        <img loading="lazy" decoding="async" src="image/Truck2.png" alt="people" width="275" height="132" aria-hidden="true">
+        <img loading="lazy" decoding="async" src="image/Truck2.png" alt="truck" width="275" height="132" aria-hidden="true">
     </picture>
 </section>
 
@@ -145,18 +147,17 @@
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">Get It Done With Us Today</h2>
+            <h2 class="cs-title">Get It Done With Us Now</h2>
             <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis at sit pellentesque molestie.  Diam, adipiscing ultrices eu turpis gravida.
             </p>
-            <a href="" class="cs-button-solid">Gret A Free Quote</a>
+            <a href="#cs-footer-274" class="cs-button-solid">Get A Free Quote</a>
         </div>
     </div>
     <!-- Background Image-->
     <picture class="cs-picture">
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets-m.jpg">
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg" alt="cabinets" width="1920" height="1280" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="image/Truck3.png">
+        <source media="(min-width: 601px)" srcset="image/Truck3.png">
+        <img loading="lazy" decoding="async" src="image/Truck3.png" alt="truck" width="1920" height="1280" aria-hidden="true">
     </picture>
 </section>
 
@@ -173,13 +174,13 @@
                 <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="image/SafegaurdTowingLogo.png" alt="logo" width="340" height="32">
             </a>
             <div class="cs-social">
-                <a class="cs-social-link" aria-label="visit google profile" href="">
+                <a class="cs-social-link" aria-label="visit google profile" href="#cs-footer-274">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
                 </a>
-                <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                <a class="cs-social-link" aria-label="visit facebook profile" href="#cs-footer-274">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
                 </a>
-                <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                <a class="cs-social-link" aria-label="visit instagram profile" href="#cs-footer-274">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
                 </a>
             </div>
@@ -193,7 +194,7 @@
                 <a class="cs-nav-link" href="tel:123-456 7890">(123) 456 7890</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="mailto:info@codestitch.com">info@codestitch.com</a>
+                <a class="cs-nav-link" href="mailto:info@codestitch.com">email@gmail.com</a>
             </li>
         </ul>
         <ul class="cs-nav">
@@ -201,7 +202,7 @@
                 <span class="cs-header">Address</span>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="">123 Avenue Street<br> Oak Harbor, WA 98101</a>
+                <a class="cs-nav-link" href="">123 Avenue Street<br> Oak Harbor, NSW 2020</a>
             </li>
         </ul>
         <!-- Contact Info -->
@@ -210,15 +211,37 @@
                 <span class="cs-header">Opening Hours</span>
             </li>
             <li class="cs-nav-li">
-                Tuesday, Thursday, Friday: 9am-6pm
+                Everyday 24/7
             </li>
             <li class="cs-nav-li">
-                ​(closed for lunch 12pm-2pm)
+                Always here when you need
             </li>
         </ul>
     </div>
 </footer>
-                                
-                                
+
+<!-- ============================================ -->
+<!--                emgergency                    -->
+<!-- ============================================ -->
+<div id="emergencyModal" class="em-modal" aria-hidden="true">
+  <div class="em-backdrop" data-close-modal></div>
+
+  <div class="em-dialog" role="dialog" aria-modal="true"
+       aria-labelledby="em-title" aria-describedby="em-desc">
+    <button class="em-close" aria-label="Close emergency dialog" data-close-modal>&times;</button>
+
+    <h3 id="em-title">Emergency Help</h3>
+    <p id="em-desc">Choose an action below. We’re here 24/7.</p>
+
+    <div class="em-actions">
+
+      <a class="em-btn em-call" href="tel:+61123456789">Call Now</a>
+      <a class="em-btn em-sms"  href="sms:+61123456789">SMS Us</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>                                   
                                 
 </html>                   
