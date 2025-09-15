@@ -31,4 +31,44 @@ for (const item of dropDowns) {
 	};
 	item.addEventListener('click', onClick);
 }
-             
+// === Emergency Modal ===
+(function () {
+  const openBtn  = document.getElementById('emergencyBtn');
+  const modal    = document.getElementById('emergencyModal');
+  if (!openBtn || !modal) return;
+
+  const closeEls = modal.querySelectorAll('[data-close-modal]');
+  let lastFocus  = null;
+
+  const openModal = () => {
+    lastFocus = document.activeElement;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+
+    modal.querySelector('.em-btn')?.focus();
+  };
+
+  const closeModal = () => {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+
+    lastFocus?.focus();
+  };
+
+  openBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal();
+  });
+
+  closeEls.forEach(el => el.addEventListener('click', closeModal));
+
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) {
+      closeModal();
+    }
+  });
+})();
+
